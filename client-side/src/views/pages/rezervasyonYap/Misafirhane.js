@@ -21,7 +21,8 @@ export default function Misafirhane() {
   const [redirect, setRedirect] = useState(200)
   const [date, setDate] = useState(new Date())
   const [refresh, setRefresh] = useState(false)
-  const [odaTuru, setOdaTuru] = useState('')
+  const [odaTurleri, setOdaTurleri] = useState([])
+  const [secilenOdaTurleri, setSecilenOdaTurleri] = useState('')
 
   useEffect(() => {
     setAlert(null)
@@ -32,8 +33,8 @@ export default function Misafirhane() {
       .api()
       .post('misafirhane/MisafirhaneRezervasyonMusaitListele', payload)
       .then(function (res) {
-        if (res.data.succes) {
-          setGirisTarihi(res.data.data.odaTuru)
+        if (res.data.success) {
+          setOdaTurleri(res.data.data.odaTuru)
         } else {
           setAlert({
             typeOfAlert: 'error',
@@ -61,7 +62,7 @@ export default function Misafirhane() {
     setAlert(null)
     let payload = {
       GirisTarihi: date,
-      OdaTuru: odaTuru,
+      OdaTuru: secilenOdaTurleri,
     }
     api
       .api()
@@ -134,13 +135,13 @@ export default function Misafirhane() {
                   multiple
                   className="mb-5"
                   onChange={(e) => {
-                    setOdaTuru(e.target.value)
+                    setSecilenOdaTurleri(e.target.value)
                   }}
                 >
-                  {odaTuru.map((odaTuru) => {
+                  {odaTurleri.map((odaTur) => {
                     return (
-                      <option key={odaTuru} style={{ textAlign: 'center' }}>
-                        {odaTuru}
+                      <option key={odaTur} style={{ textAlign: 'center' }}>
+                        {odaTur}
                       </option>
                     )
                   })}

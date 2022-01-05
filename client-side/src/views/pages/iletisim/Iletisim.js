@@ -8,20 +8,20 @@ export default function Iletisim() {
         <CCardBody>
           <CCardTitle style={{ color: '#00a5b5' }}>Bakırçay Üniversitesi</CCardTitle>
           <CCardText>
-            <p>Adres: Gazi Mustafa Kemal Mahallesi, Kaynaklar Caddesi Seyrek,Menemen, İzmir</p>
-            <p>Telefon: 0 232 493 00 00</p>
-            <p>Faks: 0 232 844 71 22</p>
-            <p>E-Posta: info@bakircay.edu.tr</p>
-            <p>KEP:bakircay.universitesi@hs01.kep.tr</p>
-            <a
-              href="https://bakircay.edu.tr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: '#00a5b5' }}
-            >
-              İnternet Sitesi: https://bakircay.edu.tr/
-            </a>
+            Adres: Gazi Mustafa Kemal Mahallesi, Kaynaklar Caddesi Seyrek,Menemen, İzmir
           </CCardText>
+          <CCardText>Telefon: 0 232 493 00 00</CCardText>
+          <CCardText>Faks: 0 232 844 71 22</CCardText>
+          <CCardText>E-Posta: info@bakircay.edu.tr</CCardText>
+          <CCardText>KEP:bakircay.universitesi@hs01.kep.tr</CCardText>
+          <a
+            href="https://bakircay.edu.tr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: '#00a5b5' }}
+          >
+            İnternet Sitesi: https://bakircay.edu.tr/
+          </a>
         </CCardBody>
       </CCard>
 
@@ -30,21 +30,19 @@ export default function Iletisim() {
           <CCardTitle style={{ color: '#00a5b5' }}>
             Bakırçay Üniversitesi Sağlık Kültür Spor Daire Başkanlığı
           </CCardTitle>
-          <CCardText>
-            <p>İzmir Bakırçay Üniversitesi Seyrek Yerleşkesi E-Blok Zemin Kat</p>
-            <p>Gazi Mustafa Kemal Mah. Kaynaklar Cad. Seyrek, Menemen / İZMİR</p>
-            <p>Telefon Numarası: 0(232) 493 00 00 / 11162</p>
-            <p>Faks: 0(232) 844 71 22</p>
-            <p>e-Posta: sksdb@bakircay.edu.tr</p>
-            <a
-              href="https://sks.bakircay.edu.tr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: '#00a5b5' }}
-            >
-              İnternet Sitesi: https://sks.bakircay.edu.tr/
-            </a>
-          </CCardText>
+          <CCardText>İzmir Bakırçay Üniversitesi Seyrek Yerleşkesi E-Blok Zemin Kat</CCardText>
+          <CCardText>Gazi Mustafa Kemal Mah. Kaynaklar Cad. Seyrek, Menemen / İZMİR</CCardText>
+          <CCardText>Telefon Numarası: 0(232) 493 00 00 / 11162</CCardText>
+          <CCardText>Faks: 0(232) 844 71 22</CCardText>
+          <CCardText>e-Posta: sksdb@bakircay.edu.tr</CCardText>
+          <a
+            href="https://sks.bakircay.edu.tr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: '#00a5b5' }}
+          >
+            İnternet Sitesi: https://sks.bakircay.edu.tr/
+          </a>
         </CCardBody>
       </CCard>
     </div>

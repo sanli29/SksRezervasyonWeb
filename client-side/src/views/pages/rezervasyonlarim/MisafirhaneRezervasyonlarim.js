@@ -59,7 +59,7 @@ export default function MisafirhaneHistory() {
     }
     api
       .api()
-      .post('misafirhane/MisafirhanehaneRezervasyonIptal', payload)
+      .post('misafirhane/MisafirhaneRezervasyonIptal', payload)
       .then(function (res) {
         if (res.data.success) {
           setAlert({ typeOfAlert: 'success', title: 'Iptal', text: res.data.message })
@@ -99,9 +99,10 @@ export default function MisafirhaneHistory() {
         </CTableHead>
         <CTableBody>
           {rezervasyonlar.map((rezervasyon) => {
+            console.log(rezervasyon)
             return (
               <CTableRow key={rezervasyon.misafirhaneId}>
-                <CTableHeaderCell>{rezervasyon.tarih}</CTableHeaderCell>
+                <CTableHeaderCell>{rezervasyon.girisTarihi}</CTableHeaderCell>
                 <CTableDataCell>{rezervasyon.odaTuru}</CTableDataCell>
                 <CTableDataCell>
                   <CButton

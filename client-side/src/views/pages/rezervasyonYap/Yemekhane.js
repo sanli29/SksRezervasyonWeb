@@ -22,7 +22,6 @@ export default function Yemekhane() {
   const [rezervasyonlar, setRezervasyonlar] = useState([])
   const [alert, setAlert] = useState(null)
   const [redirect, setRedirect] = useState(200)
-  const [checkedRezervasyonlarID, setCheckedRezervasyonlarID] = useState([])
   const [refresh, setRefresh] = useState(false)
 
   useEffect(() => {

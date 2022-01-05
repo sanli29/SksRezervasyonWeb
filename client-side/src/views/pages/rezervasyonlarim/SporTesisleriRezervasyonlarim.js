@@ -25,7 +25,7 @@ export default function SporTesisleriHistory() {
     let payload = {}
     api
       .api()
-      .post('Tesi/TesisRezervasyonListele', payload)
+      .post('Tesi/TesiRezervasyonListele', payload)
       .then(function (res) {
         if (res.data.success) {
           setRezervasyonlar(res.data.data)
@@ -101,18 +101,18 @@ export default function SporTesisleriHistory() {
           </CTableRow>
         </CTableHead>
         <CTableBody>
-          {folders.map((rezervasyon) => {
+          {rezervasyonlar.map((rezervasyon) => {
             return (
               <CTableRow key={rezervasyon.tesisId}>
                 <CTableHeaderCell>{rezervasyon.tarih}</CTableHeaderCell>
-                <CTableDataCell>{folder.tesisTuru}</CTableDataCell>
-                <CTableDataCell>{folder.baslangicSaati}</CTableDataCell>
+                <CTableDataCell>{rezervasyon.tesisTuru}</CTableDataCell>
+                <CTableDataCell>{rezervasyon.baslangicSaati}</CTableDataCell>
                 <CTableDataCell>
                   <CButton
                     color="info"
                     className="px-4"
                     onClick={() => {
-                      RezervasyonIptal(rezervasyon.kutuphaneId)
+                      RezervasyonIptal(rezervasyon.tesisId)
                       setRefresh(!refresh)
                     }}
                   >

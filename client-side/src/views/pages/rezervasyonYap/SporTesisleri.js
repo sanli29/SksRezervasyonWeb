@@ -20,20 +20,17 @@ export default function SporTesisleri() {
   const [date, setDate] = useState(new Date())
   const [alert, setAlert] = useState(null)
   const [redirect, setRedirect] = useState(200)
-  const [tesisTur, setTesisTur] = useState(1)
+  const [tesisTur, setTesisTur] = useState('Halısaha')
   const [baslangicSaati, setBaslangicSaati] = useState([])
   const [saat, setSaat] = useState('')
   const [refresh, setRefresh] = useState(false)
 
   useEffect(() => {
     setAlert(null)
-    let payload = {
-      Tarih: date,
-      TesisTur: tesisTur,
-    }
+    let payload = { Tarih: date, TesisTur: tesisTur }
     api
       .api()
-      .post('tesi/TesiRezervasyonMusaitListele', payload)
+      .post('Tesi/TesiRezervasyonMusaitListele', payload)
       .then(function (res) {
         if (res.data.success) {
           setBaslangicSaati(res.data.data.baslangicSaati)
