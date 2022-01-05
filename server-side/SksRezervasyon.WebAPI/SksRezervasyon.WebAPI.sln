@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SksRezervasyon.WebAPI", "Sk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SksRezervasyon.Core", "..\SksRezervasyon.Core\SksRezervasyon.Core.csproj", "{8C797176-6E83-4540-B16B-B9FD62134395}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SksRezervasyon.Business", "..\SksRezervasyon.Business\SksRezervasyon.Business.csproj", "{DC81944F-B68E-4812-A5D5-342207021F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SksRezervasyon.DataAccess", "..\SksRezervasyon.DataAccess\SksRezervasyon.DataAccess.csproj", "{E83FBDC0-3ED4-4452-AE06-3E0C7722853C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8C797176-6E83-4540-B16B-B9FD62134395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C797176-6E83-4540-B16B-B9FD62134395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C797176-6E83-4540-B16B-B9FD62134395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC81944F-B68E-4812-A5D5-342207021F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC81944F-B68E-4812-A5D5-342207021F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC81944F-B68E-4812-A5D5-342207021F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC81944F-B68E-4812-A5D5-342207021F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83FBDC0-3ED4-4452-AE06-3E0C7722853C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83FBDC0-3ED4-4452-AE06-3E0C7722853C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83FBDC0-3ED4-4452-AE06-3E0C7722853C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83FBDC0-3ED4-4452-AE06-3E0C7722853C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,17 @@
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.Business.deps.json
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.Business.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\ref\SksRezervasyon.Business.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.Business.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.DataAccess.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.Core.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\bin\Debug\net5.0\SksRezervasyon.DataAccess.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.csproj.AssemblyReference.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.AssemblyInfoInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.AssemblyInfo.cs
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.csproj.CoreCompileInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.csproj.CopyComplete
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\ref\SksRezervasyon.Business.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\obj\Debug\net5.0\SksRezervasyon.Business.pdb

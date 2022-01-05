@@ -1,0 +1,15 @@
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\SksRezervasyon.Core.deps.json
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\SksRezervasyon.Core.runtimeconfig.json
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\SksRezervasyon.Core.runtimeconfig.dev.json
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\ref\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\bin\Debug\net5.0\SksRezervasyon.Core.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.AssemblyInfoInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.AssemblyInfo.cs
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.csproj.CoreCompileInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\ref\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.genruntimeconfig.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Core\obj\Debug\net5.0\SksRezervasyon.Core.csproj.AssemblyReference.cache

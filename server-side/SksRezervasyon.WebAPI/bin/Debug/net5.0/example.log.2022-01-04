@@ -1,0 +1,127 @@
+2022-01-04 23:42:17,371  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-04 23:42:17,651  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-04 23:42:17,655  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI
+ 2022-01-04 23:42:46,149  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-04 23:42:46,248  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-04 23:42:46,258  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI
+ 2022-01-04 23:43:44,767 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Login Started{"Email":"emre@gmail.com","Sifre":"naber"}
+ 2022-01-04 23:43:45,517 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Login Finished{"data":null,"success":false,"status":-1,"message":"Böyle Bir Kullanýcý Bulunmamaktadýr."}
+ 2022-01-04 23:44:20,115 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":null,"Sifre":"naber"}
+ 2022-01-04 23:44:20,130 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Finished{"data":null,"success":false,"status":-1,"message":"Adi boþ olamaz"}
+ 2022-01-04 23:44:58,448 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:45:15,312 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: Register Ýþleminde Hata
+ ---> System.Exception: Register Ýþleminde Hata
+ ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SksRezervasyon.Business.DTO.Ogrenci.OgrenciLoginResponsetDTO' to 'SksRezervasyon.Business.DTO.Ogrenci.OgrenciRegisterResponsetDTO'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at SksRezervasyon.Business.ServiceResponse.ServiceResponseBuilder.SuccessResponse[T](Object _data) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\ServiceResponse\ServiceResponseBuilder.cs:line 16
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 74
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 83
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 82
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 91
+   at lambda_method29(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-04 23:45:28,897 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:46:41,107  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-04 23:46:41,180  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-04 23:46:41,213  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI
+ 2022-01-04 23:46:49,260 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:46:56,151 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: Register Ä°ÅŸleminde Hata
+ ---> System.Exception: Register Ä°ÅŸleminde Hata
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> OgrenciRegisterResponsetDTO
+System.Object -> SksRezervasyon.Business.DTO.Ogrenci.OgrenciRegisterResponsetDTO
+   at lambda_method114(Closure , Object , OgrenciRegisterResponsetDTO , ResolutionContext )
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 73
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 83
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 82
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 91
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-04 23:47:01,968 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:47:06,610 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: Register Ýþleminde Hata
+ ---> System.Exception: Register Ýþleminde Hata
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> OgrenciRegisterResponsetDTO
+System.Object -> SksRezervasyon.Business.DTO.Ogrenci.OgrenciRegisterResponsetDTO
+   at lambda_method114(Closure , Object , OgrenciRegisterResponsetDTO , ResolutionContext )
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 73
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.Business.Concretes.OgrenciBusiness.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.Business\Concretes\OgrenciBusiness.cs:line 83
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 82
+   --- End of inner exception stack trace ---
+   at SksRezervasyon.WebAPI.Controllers.OgrenciController.Register(OgrenciRegisterRequestDTO entity) in C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI\Controllers\OgrenciController.cs:line 91
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-04 23:47:10,687 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:48:23,421  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-04 23:48:23,517  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-04 23:48:23,525  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI
+ 2022-01-04 23:48:31,226 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:48:52,277 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Finished{"data":{},"success":true,"status":0,"message":"Baþarýlý"}
+ 2022-01-04 23:59:18,232  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-04 23:59:18,357  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-04 23:59:18,360  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.WebAPI
+ 2022-01-04 23:59:22,195 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Started{"Email":"emre@gmail.com","Adi":"emre","Sifre":"naber"}
+ 2022-01-04 23:59:22,753 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Register Finished{"data":null,"success":false,"status":-1,"message":"Bu mail sistemde bulunmaktadýr."}
+ 2022-01-04 23:59:45,848 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Logout Started
+ 2022-01-04 23:59:45,899 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Logout Finished{"data":{},"success":true,"status":0,"message":"Baþarýlý"}
+ 2022-01-04 23:59:51,097 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Login Started{"Email":"emre@gmail.com","Sifre":"naber"}
+ 2022-01-04 23:59:51,290 DEBUG SksRezervasyon.WebAPI.Logger.Debug [27] - MESSAGE: Login Finished{"data":{"OgrenciId":1},"success":true,"status":0,"message":"Baþarýlý"}
+ 

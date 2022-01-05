@@ -1,0 +1,15 @@
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\SksRezervasyon.DataAccess.deps.json
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\SksRezervasyon.DataAccess.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\ref\SksRezervasyon.DataAccess.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\SksRezervasyon.DataAccess.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\SksRezervasyon.Core.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\bin\Debug\net5.0\SksRezervasyon.Core.pdb
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.csproj.AssemblyReference.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.AssemblyInfoInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.AssemblyInfo.cs
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.csproj.CopyComplete
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\ref\SksRezervasyon.DataAccess.dll
+C:\Users\wyrex\Desktop\SksRezervasyonWebUygulamasi\server-side\SksRezervasyon.DataAccess\obj\Debug\net5.0\SksRezervasyon.DataAccess.pdb
