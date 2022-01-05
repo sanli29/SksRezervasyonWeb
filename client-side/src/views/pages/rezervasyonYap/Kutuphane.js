@@ -11,7 +11,6 @@ import {
   CForm,
   CCol,
 } from '@coreui/react'
-import { Link } from 'react-router-dom'
 import DatePicker from 'react-date-picker'
 import Alert from '../../../components/Alert/Alert'
 import { Redirect } from 'react-router'
@@ -134,7 +133,6 @@ export default function Kutuphane() {
                 </h5>
                 <CFormSelect
                   className="mb-4"
-                  aria-label="Default select example"
                   onChange={(e) => {
                     setOdaNo(e.target.value)
                   }}
@@ -155,7 +153,6 @@ export default function Kutuphane() {
                   multiple
                   htmlSize={5}
                   className="mb-4"
-                  aria-label="Default select example"
                   onChange={(e) => {
                     setSaat(e.target.value)
                   }}

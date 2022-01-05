@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   CCard,
   CCardBody,
@@ -11,69 +11,108 @@ import {
   CRow,
   CCol,
 } from '@coreui/react'
-import { Link } from 'react-router-dom'
 import DatePicker from 'react-date-picker'
+import Alert from '../../../components/Alert/Alert'
+import { Redirect } from 'react-router'
+import api from '../../../components/Api/Api'
 
 export default function SporTesisleri() {
-  const [folders] = useState([
-    {
-      folderId: 1,
-      isFile: true,
-      folderName: 'baba',
-      fileKind: 'baba',
-      fileSize: 'baba',
-      creationDate: 'baba',
-    },
-    {
-      folderId: 2,
-      isFile: false,
-      folderName: 'baba',
-      fileKind: 'baba',
-      fileSize: 'baba',
-      creationDate: 'baba',
-    },
-    {
-      folderId: 3,
-      isFile: true,
-      folderName: 'baba',
-      fileKind: 'baba',
-      fileSize: 'baba',
-      creationDate: 'baba',
-    },
-    {
-      folderId: 4,
-      isFile: true,
-      folderName: 'baba',
-      fileKind: 'baba',
-      fileSize: 'baba',
-      creationDate: 'baba',
-    },
-    {
-      folderId: 5,
-      isFile: true,
-      folderName: 'baba',
-      fileKind: 'baba',
-      fileSize: 'baba',
-      creationDate: 'baba',
-    },
-  ])
-  const [value, onChange] = useState(new Date())
+  const [date, setDate] = useState(new Date())
+  const [alert, setAlert] = useState(null)
+  const [redirect, setRedirect] = useState(200)
+  const [tesisTur, setTesisTur] = useState(1)
+  const [baslangicSaati, setBaslangicSaati] = useState([])
+  const [saat, setSaat] = useState('')
+  const [refresh, setRefresh] = useState(false)
+
+  useEffect(() => {
+    setAlert(null)
+    let payload = {
+      Tarih: date,
+      TesisTur: tesisTur,
+    }
+    api
+      .api()
+      .post('tesi/TesiRezervasyonMusaitListele', payload)
+      .then(function (res) {
+        if (res.data.success) {
+          setBaslangicSaati(res.data.data.baslangicSaati)
+        } else {
+          setAlert({
+            typeOfAlert: 'error',
+            title: 'Spor Tesisleri Rezervasyon Listele',
+            text: res.data.message,
+          })
+        }
+      })
+      .catch(function (err) {
+        console.log(err)
+        switch (err.response.status) {
+          case 401:
+            setRedirect(401)
+          case 404:
+            setRedirect(404)
+          case 500:
+            setRedirect(500)
+          default:
+            break
+        }
+      })
+  }, [date, tesisTur, refresh])
+
+  function RezervasyonYap() {
+    setAlert(null)
+    let payload = {
+      Tarih: date,
+      TesisTur: tesisTur,
+      BaslangicSaati: saat,
+    }
+    api
+      .api()
+      .post('tesi/TesiRezervasyonYap', payload)
+      .then(function (res) {
+        if (res.data.success) {
+          setAlert({
+            typeOfAlert: 'success',
+            title: 'Spor Tesisleri Rezervasyon Yap',
+            text: res.data.message,
+          })
+        } else {
+          setAlert({
+            typeOfAlert: 'error',
+            title: 'Spor Tesisleri Rezervasyon Yap',
+            text: res.data.message,
+          })
+        }
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+    setRefresh(!refresh)
+  }
+
+  if (redirect == 401) {
+    return <Redirect to="/Login" />
+  } else if (redirect == 404) {
+    return <Redirect to="/404" />
+  } else if (redirect == 500) {
+    return <Redirect to="/500" />
+  }
+
   return (
     <div>
+      {alert === null ? null : <Alert props={alert} />}
       <CCard style={{ width: '100%', height: '100%', marginBottom: '30px' }}>
         <CCardBody>
           <CCardTitle style={{ color: '#00a5b5' }}>Spor Tesisleri İçin Rezervasyon</CCardTitle>
           <CCardText>
-            <h6>
-              Tesisler için tespit edilen ücretler, tahsisin yapıldığı tarihte ilgililerden peşin
-              olarak tahsil edilir.
-            </h6>
-            <h6>
-              Kurum dışı ve özel talep kullanımları üniversite yönetiminin onayı ile
-              gerçekleşebilir.
-            </h6>
-            <h6>Tesislere, spora uygun olmayan ayakkabı ve kıyafetler ile girilmez.</h6>
+            Tesisler için tespit edilen ücretler, tahsisin yapıldığı tarihte ilgililerden peşin
+            olarak tahsil edilir.
           </CCardText>
+          <CCardText>
+            Kurum dışı ve özel talep kullanımları üniversite yönetiminin onayı ile gerçekleşebilir.
+          </CCardText>
+          <CCardText>Tesislere, spora uygun olmayan ayakkabı ve kıyafetler ile girilmez.</CCardText>
         </CCardBody>
       </CCard>
 
@@ -85,7 +124,12 @@ export default function SporTesisleri() {
                 <h5 style={{ textAlign: 'center', marginBottom: '25px' }}>
                   Rezervasyon yapmak istediğiniz tesisi seçiniz
                 </h5>
-                <CFormSelect className="mb-4">
+                <CFormSelect
+                  className="mb-4"
+                  onChange={(e) => {
+                    setTesisTur(e.target.value)
+                  }}
+                >
                   <option style={{ textAlign: 'center' }} value="1">
                     Halısaha
                   </option>
@@ -98,28 +142,37 @@ export default function SporTesisleri() {
                 </CFormSelect>
                 <h5 style={{ textAlign: 'center', marginBottom: '25px' }}>Tarih seçiniz </h5>
                 <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-                  <DatePicker className="bg-secondary" onChange={onChange} value={value} />
+                  <DatePicker className="bg-secondary" onChange={setDate} value={date} />
                 </div>
                 <h5 style={{ textAlign: 'center', marginBottom: '25px' }}>Saat seçiniz </h5>
-                <CFormSelect className="mb-4" aria-label="Default select example">
-                  <option style={{ textAlign: 'center' }}>Saatler</option>
-                  <option style={{ textAlign: 'center' }} value="1">
-                    09:00-10:00
-                  </option>
-                  <option style={{ textAlign: 'center' }} value="2">
-                    10:00-11:00
-                  </option>
-                  <option style={{ textAlign: 'center' }} value="3">
-                    11:00-12:00
-                  </option>
+                <CFormSelect
+                  multiple
+                  htmlSize={5}
+                  className="mb-4"
+                  onChange={(e) => {
+                    setSaat(e.target.value)
+                  }}
+                >
+                  {baslangicSaati.map((saat) => {
+                    return (
+                      <option key={saat} style={{ textAlign: 'center' }}>
+                        {saat}
+                      </option>
+                    )
+                  })}
                 </CFormSelect>
                 <CRow>
                   <div style={{ textAlign: 'center' }}>
-                    <Link to="/ogrenci/Homepage">
-                      <CButton color="info" className="px-4">
-                        REZERVASYON YAP
-                      </CButton>
-                    </Link>
+                    <CButton
+                      color="info"
+                      className="px-4"
+                      onClick={() => {
+                        RezervasyonYap()
+                        setRefresh(!refresh)
+                      }}
+                    >
+                      REZERVASYON YAP
+                    </CButton>
                   </div>
                 </CRow>
               </CForm>

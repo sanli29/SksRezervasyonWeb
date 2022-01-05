@@ -6,7 +6,6 @@ import {
   CTableHeaderCell,
   CTableDataCell,
   CTableRow,
-  CFormCheck,
   CCard,
   CCardBody,
   CCardTitle,

@@ -6,7 +6,6 @@ import {
   CTableHeaderCell,
   CTableDataCell,
   CTableRow,
-  CFormCheck,
   CButton,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
