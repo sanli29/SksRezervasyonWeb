@@ -70,7 +70,7 @@ const Login = () => {
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
                       <CFormInput
-                        placeholder="Email"
+                        placeholder="E-mail"
                         autoComplete="username"
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -104,8 +104,9 @@ const Login = () => {
                   <div>
                     <h2>Kayıt Ol</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
+                      Bakırçay Üniversitesi SKS rezervasyon sitesine hoşgeldiniz. Email ve şifre
+                      girerek giriş yapabilirsiniz.Sisteme kayıtlı değilseniz kayıt ol butonuna
+                      basınız.
                     </p>
                     <Link to="/register">
                       <CButton color="danger" className="mt-3" active tabIndex={-1}>
