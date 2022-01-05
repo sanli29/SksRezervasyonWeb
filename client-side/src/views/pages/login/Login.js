@@ -20,8 +20,8 @@ import { Redirect } from 'react-router'
 import api from '../../../components/Api/Api'
 
 const Login = () => {
-  const [email, setEmail] = useState('emre@gmail.com')
-  const [password, setPassword] = useState('naber')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [role, setRole] = useState('ogrenci')
   const [redirect, setRedirect] = useState(false)
   const [alert, setAlert] = useState(null)
